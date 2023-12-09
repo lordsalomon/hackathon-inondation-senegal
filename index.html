@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- 1- EXTERNAL STYLES -->
+    <!-- Production: perso index page css  -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Production: Openlayers css  -->
+    <link rel="stylesheet" href="./libs/v6.14.1-dist/ol.css" />
+    <!-- <link rel="stylesheet" href="https://openlayers.org/en/latest/css/ol.css" /> -->
+    <!-- CDN Openlayers css for test purpose only, not to use in production -->
+
+    <!-- ol-layerswitcher css -->
+    <link rel="stylesheet" href="./libs/layerswitcher/ol-layerswitcher.css" />
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- ol-ext Viglino awesome package -->
+    <link rel="stylesheet" href="./libs/popup/ol-ext.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://viglino.github.io/ol-ext/dist/ol-ext.css"
+    /> -->
+
+    <!-- Jquery for Search Bar - Viglino awesome package -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+
+    <!-- Ol geocoder nominatim extension  -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/ol-geocoder@latest/dist/ol-geocoder.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/ol-geocoder"></script> -->
+
+    <title>Hackathon : Sama Dekkuway</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./images/Diourbel_PencumNdox.jpg"
+    />
+  </head>
+  <body>
+    <!-- <header>
+      <div class="title">Webmapping website test</div>
+    </header> -->
+    <div class="row">
+      <div id="right" class="column">
+        <div id="map" class="map"></div>
+        <!-- map div : map div should be nested into another div container absolute for a single map fixed page -->
+        <!-- <div id="map-container" class="map-container" style="position: fixed">
+      <div id="map" class="map" style="position: relative"></div>
+    </div> -->
+
+        <!-- Production: Openlayers js, responsible of the body map  -->
+        <script type="text/javascript" src="./libs/v6.14.1-dist/ol.js"></script>
+        <!-- <script
+      type="text/javascript"
+      src="https://openlayers.org/en/latest/build/ol.js"
+    ></script> -->
+
+        <!-- ol-layerswitcher js -->
+        <script src="./libs/layerswitcher/ol-layerswitcher.js"></script>
+
+        <!-- ol-popup Viglino js -->
+        <script src="./libs/popup/ol-ext.js"></script>
+        <!-- <script src="https://viglino.github.io/ol-ext/dist/ol-ext.js"></script> -->
+        <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL,Object.assign"></script>
+        <div class="infos">
+          <!-- preload icon -->
+          <i class="fa maki-bus" title="building"></i>
+          <i class="fa maki-town_hall" title="building"></i>
+          <i class="fa maki-theatre" title="building"></i>
+          <i class="fa maki-industrial" title="building"></i>
+        </div>
+      </div>
+      <div id="left" class="column">
+        <h2>À Propos du projet :</h2>
+        <p id="projectdescription">
+          Le Challenge Sama-Dekkuway est une invitation à tous les esprits
+          créatifs et aux développeurs passionnés de contribuer à la résolution
+          d’un problème crucial.
+        </p>
+        <!-- <h2>Objectifs Principaux</h2>
+        <p id="objectifs">
+          <b>1. Valorisation des données géospatiales:</b> Créer de la valeur
+          (solutions et/ou services) à partir des données actualisées et
+          précises fournies sur les zones inondables au Sénégal.<br />
+          <br />
+          <b>2. Encourager l’Innovation Technologique:</b> Stimuler la création
+          de solutions et applications numériques de gestion et prévention des
+          inondations, en utilisant les technologies émergentes<br />
+          <br />
+          <b>3. Sensibiliser à l’Environnement:</b> Promouvoir la
+          sensibilisation et l’engagement envers la protection de
+          l’environnement grâce à la technologie.
+        </p> -->
+        <p>
+          <img
+            src="./images/Diourbel_PencumNdox.jpg"
+            alt="Pencum Ndox, zone inondable/inondée à Diourbel"
+            class="center"
+          />
+        </p>
+        <h2>Résultats attendus :</h2>
+        <p id="results">
+          <b>Recueillir des propositions innovantes</b> destinées à orienter les
+          futurs acquéreurs de terrains pour leur éviter d’investir dans des
+          zones inondables, non constructibles ;<br />
+          <br />
+          <b>Promouvoir des solutions nouvelles pour le partage des données </b>
+          sur la cartographie des zones d’inondations afin de garantir une large
+          diffusion des produits du PGIIS sur l’amélioration de la connaissance
+          du risque d’inondation.<br />
+        </p>
+        <p id="realisation">
+          Réalisation : Décembre 2023, Pape Souleymane Diop, diopsoulj@gmail.com
+        </p>
+      </div>
+      <!-- Production: perso index page js  / must be puted after the map div-->
+      <script type type="module" src="./javascript/main.js"></script>
+    </div>
+  </body>
+</html>
