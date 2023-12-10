@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head id="inasafe-html-resources">
+    <meta charset="utf-8" />
+    <title>InaSAFE</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link href="resources/css/bootstrap.css" rel="stylesheet" />
+    <link href="file:///C:\Users\diops\AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins\inasafe\safe\resources/css/bootstrap.css" rel="stylesheet" />
+    <link href="resources/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="file:///C:\Users\diops\AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins\inasafe\safe\resources/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="resources/css/InaSAFE.css" rel="stylesheet" />
+    <link href="file:///C:\Users\diops\AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins\inasafe\safe\resources/css/InaSAFE.css" rel="stylesheet" />
+    <script type="text/javascript" src="resources/js/jquery-1.7.1.min.js">
+      /*fake space for html scraping purpose*/
+    </script>
+    <script type="text/javascript" src="file:///C:\Users\diops\AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins\inasafe\safe\resources/js/jquery-1.7.1.min.js">
+      /*fake space for html scraping purpose*/
+    </script>
+    <script type="text/javascript" src="resources/js/inasafe.js">
+      /*fake space for html scraping purpose*/
+    </script>
+    <script type="text/javascript" src="file:///C:\Users\diops\AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins\inasafe\safe\resources/js/inasafe.js">
+      /*fake space for html scraping purpose*/
+    </script>
+
+    <style type="text/css">
+      body {
+        margin-left: -10px;
+        margin-right: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class='container'>
+        
+    <div class="branding">
+        <img src="file:///C:/Users/diops/AppData/Roaming/QGIS/QGIS3/profiles/default/python/plugins/inasafe/safe/resources/img/logos/inasafe-logo-white.png" title="InaSAFE" alt="InaSAFE" />
+    </div>
+
+    <div id="analysis-question">
+    <h5 class="info">
+        Question de l'analyse
+    </h5>
+    <p>
+        
+            <h5>Dans l'éventualité d'un Inondation, combien Structures peut-être affectés ?</h5>
+        
+    </p>
+</div>
+    <div id="general-report">
+    <h5 class="info">
+        Rapport général
+    </h5>
+    <div class="container">
+        <div class="row">
+            <h5>
+                Estimation nombre de bâtiments affecté par zone d'aléa
+            </h5>
+        </div>
+        
+            <div class="row">
+                <div class="col-sm-12" style="margin-top: 10px">
+                    <table class="table table-striped condensed">
+                        <thead>
+                            <tr>
+                                <th colspan="1">Zone d'Aléa</th>
+                                
+                                    <th class="text-right" colspan="1">Total</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            <tr>
+                                
+                                    <td colspan="1">Élevé</td>
+                                
+                                
+                                    <td class="text-right" colspan="1">4,000</td>
+                                
+                            </tr>
+                            
+                            <tr>
+                                
+                                    <td colspan="1">Modéré</td>
+                                
+                                
+                                    <td class="text-right" colspan="1">461</td>
+                                
+                            </tr>
+                            
+                            <tr>
+                                
+                                    <td colspan="1">Bas</td>
+                                
+                                
+                                    <td class="text-right" colspan="1">1,300</td>
+                                
+                            </tr>
+                            
+                            <tr>
+                                
+                                    <td colspan="1">Prudence</td>
+                                
+                                
+                                    <td class="text-right" colspan="1">0</td>
+                                
+                            </tr>
+                            
+                            <tr>
+                                
+                                    <th colspan="1">Total Exposé</th>
+                                
+                                
+                                    <td class="text-right" colspan="1">5,700</td>
+                                
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-sm-12" style="margin-top: 10px">
+                    <table class="table table-striped condensed">
+                        <thead>
+                            <tr>
+                                <th colspan="1">Structures</th>
+                                
+                                    <th class="text-right" colspan="1">Total</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            <tr>
+                                
+                                    <td colspan="1">Affecté</td>
+                                
+                                
+                                    <td class="text-right" colspan="1">5,700</td>
+                                
+                            </tr>
+                            
+                            <tr>
+                                
+                                    <td colspan="1">Non affecté(s)</td>
+                                
+                                
+                                    <td class="text-right" colspan="1">0</td>
+                                
+                            </tr>
+                            
+                            <tr>
+                                
+                                    <td colspan="1">Non Exposé</td>
+                                
+                                
+                                    <td class="text-right" colspan="1">1,400</td>
+                                
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        
+        <div>
+            <ul>
+                
+                    
+                        
+                        
+                        
+                        <li colspan="100%"><b>Affecté</b>: Un élément de l'enjeu (par ex population, route, bâtiment, occupation du sol) qui subit un aléa (par ex tsunami, inondation, séisme) et qui endure des conséquences (dommages, évacuation, déplacement, décès) du à l'aléa.</li>
+                    
+                
+            </ul>
+        </div>
+    </div>
+</div>
+    
+    <div id="analysis-detail">
+    
+    <style>
+        #detail-table thead th {
+            vertical-align: top;
+        }
+
+        
+        #detail-table th.affected, #detail-table td.affected {
+            
+        }
+
+        /* border top */
+        #detail-table thead tr:first-child th.affected {
+            border-top: 2px #36454f solid;
+        }
+
+        /* border bottom */
+        #detail-table tfoot tr:last-child th.affected {
+            border-bottom: 2px #36454f solid;
+        }
+
+        /* border left */
+        #detail-table tr th:not(.affected) + .affected {
+            border-left: 2px #36454f solid;
+        }
+
+        /* border right */
+        #detail-table tr .affected + :not(.affected) {
+            border-left: 2px #36454f solid;
+        }
+        
+        #detail-table th.not_affected, #detail-table td.not_affected {
+            
+        }
+
+        /* border top */
+        #detail-table thead tr:first-child th.not_affected {
+            border-top: 2px #36454f solid;
+        }
+
+        /* border bottom */
+        #detail-table tfoot tr:last-child th.not_affected {
+            border-bottom: 2px #36454f solid;
+        }
+
+        /* border left */
+        #detail-table tr th:not(.not_affected) + .not_affected {
+            border-left: 2px #36454f solid;
+        }
+
+        /* border right */
+        #detail-table tr .not_affected + :not(.not_affected) {
+            border-left: 2px #36454f solid;
+        }
+        
+    </style>
+    <h5 class="info">
+        Détail de l'analyse
+    </h5>
+    <p>
+        <h5>Estimation du nombre de bâtiments de structures par type</h5>
+    </p>
+    <table id="detail-table" class="table table-striped condensed">
+        <thead>
+            <tr>
+                
+                    
+                    <th class="text-left" rowspan="2">
+                        Type structures
+                    </th>
+                    
+                
+                    
+
+                        
+                            
+                            
+                            
+                            
+                            
+                            
+                            <th class="text-center affected"
+                                colspan="4">
+                                Affecté
+                            </th>
+                            
+                        
+
+                    
+                
+                    
+
+                        
+                            
+                            
+                            
+                            
+                            
+                            
+                        
+
+                    
+                
+                    
+
+                        
+                            
+                            
+                            
+                            
+                            
+                            
+                        
+
+                    
+                
+                    
+
+                        
+                            
+                            
+                            
+                            
+                            
+                            
+                        
+
+                    
+                
+                    
+
+                        
+                            
+                            
+                            
+                            
+                            
+                            
+                            <th class="text-center not_affected"
+                                colspan="1">
+                                Non affectés
+                            </th>
+                            
+                        
+
+                    
+                
+                    
+                    <th class="text-right" rowspan="2">
+                        Total non exposé
+                    </th>
+                    
+                
+                    
+                    <th class="text-right" rowspan="2">
+                        Total
+                    </th>
+                    
+                
+            </tr>
+            <tr>
+                
+                    
+                        
+                        
+                        
+                        
+                        <th class="text-right affected">
+                            
+                                Élevé
+                            
+                        </th>
+                    
+                
+                    
+                        
+                        
+                        
+                        
+                        <th class="text-right affected">
+                            
+                                Modéré
+                            
+                        </th>
+                    
+                
+                    
+                        
+                        
+                        
+                        
+                        <th class="text-right affected">
+                            
+                                Bas
+                            
+                        </th>
+                    
+                
+                    
+                        
+                        
+                        
+                        
+                        <th class="text-right affected">
+                            
+                                Total affectés
+                            
+                        </th>
+                    
+                
+                    
+                        
+                        
+                        
+                        
+                        <th class="text-right not_affected">
+                            
+                                Total non affecté
+                            
+                        </th>
+                    
+                
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                
+                    
+                    <th class="text-left">
+                        Batiment
+                    </th>
+                    
+                
+                    
+                        
+                            
+                            
+                            <td class="text-right affected">
+                                4,000
+                            </td>
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            <td class="text-right affected">
+                                461
+                            </td>
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            <td class="text-right affected">
+                                1,300
+                            </td>
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            <td class="text-right affected">
+                                5,700
+                            </td>
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            <td class="text-right not_affected">
+                                0
+                            </td>
+                        
+                    
+                
+                    
+                        
+                            <td class="text-right">
+                                1,400
+                            </td>
+                        
+                    
+                
+                    
+                        
+                            <td class="text-right">
+                                7,100
+                            </td>
+                        
+                    
+                
+            </tr>
+            
+        </tbody>
+        <tfoot>
+            <tr>
+                
+                    
+                    <th class="text-left">
+                        Total
+                    </th>
+                    
+                
+                    
+                        
+                            <th class="text-right affected">
+                                4,000
+                            </th>
+                        
+                    
+                
+                    
+                        
+                            <th class="text-right affected">
+                                461
+                            </th>
+                        
+                    
+                
+                    
+                        
+                            <th class="text-right affected">
+                                1,300
+                            </th>
+                        
+                    
+                
+                    
+                        
+                            <th class="text-right affected">
+                                5,700
+                            </th>
+                        
+                    
+                
+                    
+                        
+                            <th class="text-right not_affected">
+                                0
+                            </th>
+                        
+                    
+                
+                    
+                        
+                            <th class="text-right">
+                                1,400
+                            </th>
+                        
+                    
+                
+                    
+                        
+                            <th class="text-right">
+                                7,100
+                            </th>
+                        
+                    
+                
+            </tr>
+        </tfoot>
+    </table>
+
+    <!--extra table starts here-->
+    
+    <!--extra table ends here-->
+
+    <div>
+        
+    </div>
+    
+</div>
+    <div id="">
+    
+</div>
+    
+    <div id="">
+    
+</div>
+    <div id="notes-assumptions">
+    
+    <h5 class="info">
+        Notes et hypothèses
+    </h5>
+    
+    
+    <ul>
+        
+            
+            <h5 class="category">
+                Notes de l'analyse
+            </h5>
+            <div style="background-color: #3DB2DD; height: 4px; margin-top: -8px; margin-left: -15px;" class="category"></div>
+                
+                <li colspan="100%">Les colonnes et les lignes contenant seulement 0 or "Pas de Données" sont exclues du tableau.</li>
+                
+            
+        
+            
+            <h5 class="category">
+                Notes enjeu structure
+            </h5>
+            <div style="background-color: #3DB2DD; height: 4px; margin-top: -8px; margin-left: -15px;" class="category"></div>
+                
+                <li colspan="100%">L'impact des routes, des populations, des structures ou des autres enjeux peuvent être sous-estimés si les données d'enjeux sont incomplètes.</li>
+                
+                <li colspan="100%">Les structures qui superposent l'emprise de l'analyse peuvent avoir été attribués un aléa plus faible à celui qu'ils sont exposés à l'extérieur de l'emprise de l'analyse.</li>
+                
+                <li colspan="100%">Les chiffres rapportés pour les structures ont été arrondis à 100 près si plus de 1 000 et moins de 100 000; et à 1000 près si plus de 100 000.</li>
+                
+                <li colspan="100%">L'arrondi est appliqué à tous les effectifs des structures supérieurs à 1 000, ce qui peut entraîner des divergences entre les sous-totaux et les totaux.</li>
+                
+                <li colspan="100%">Notez que les totaux sont calculés à partir de l'emprise d'analyse entière et ensuite arrondis, alors que les sous-totaux sont calculés par zone d'agrégation et ensuite arrondis. En utilisant cette approche, nous évitons d'ajouter des résultats déjà arrondis et ainsi d'aggraver les arrondis.</li>
+                
+            
+        
+            
+            <h5 class="category">
+                Notes générales inondation
+            </h5>
+            <div style="background-color: #3DB2DD; height: 4px; margin-top: -8px; margin-left: -15px;" class="category"></div>
+                
+                <li colspan="100%">L'emprise et la sévérité des scénarios représentés ou les aléas peuvent ne pas correspondre à des événements futurs.</li>
+                
+                <li colspan="100%">L'impact sur les routes, les populations, les structures ou les autres enjeux peuvent différer des résultats de l'analyse à cause des conditions locales telles que le terrain ou le type de structure.</li>
+                
+                <li colspan="100%">L'emprise d'analyse est limité à l'emprise de l'agrégation ou de l'emprise souhaitée. Les données d'aléas ou d'enjeux en-dehors de l'emprise d'analyse ne seront pas incluses dans la couche d'impact, la carte d'impact et les rapports.</li>
+                
+            
+        
+            
+            <h5 class="category">
+                Notes affectés
+            </h5>
+            <div style="background-color: #3DB2DD; height: 4px; margin-top: -8px; margin-left: -15px;" class="category"></div>
+                
+                <li colspan="100%">Les enjeux dans les classes d'aléas suivantes sont considérées comme affectées: Élevé, Modéré, Bas</li>
+                
+            
+        
+    </ul>
+    
+</div>
+    <div id="analysis-provenance-details-simplified">
+    <h5 class="info">
+        Détails de l'analyse
+    </h5>
+    
+        
+        <p>
+            <b>Source aléa</b> ZonesInondables - PGIIS - 
+        </p>
+        
+    
+        
+        <p>
+            <b>Source enjeu</b> bati_wgs84 - PGIIS - 
+        </p>
+        
+    
+        
+        <p>
+            <b>Source agrégation</b> non utilisé
+        </p>
+        
+    
+        
+        <p>
+            <b>Fonction d'Impact</b> Inondation Polygone Sur Structures Polygone
+        </p>
+        
+    
+</div>
+
+    </div>
+  </body>
+</html>
