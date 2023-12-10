@@ -74,6 +74,20 @@ p {
   width: 45%;
 }
 
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column2 {
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: inline;
+}
+
 /* put the legend in the left side of the map */
 .ol-control.ol-legend {
   bottom: 0.5em;
