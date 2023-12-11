@@ -205,11 +205,46 @@ const zonesinondables = new ol.layer.VectorImage({
   },
 });
 
+// 3) Points of interest
+//style poi
+var stylepoi = new ol.style.Style({
+  fill: new ol.style.Fill({
+    color: "rgb(0,0,0)",
+  }),
+  stroke: new ol.style.Stroke({
+    color: "rgb(0,0,0)",
+    width: 2,
+  }),
+  text: new ol.style.Text({
+    font: "10px Calibri,sans-serif",
+    textAlign: "center",
+    backgroundFill: new ol.style.Fill({ color: "white" }),
+    fill: new ol.style.Fill({
+      color: "black",
+    }),
+  }),
+});
+
+//poi layer
+const poi = new ol.layer.VectorImage({
+  source: new ol.source.Vector({
+    defaultProjection: "EPSG:4326",
+    url: "asset/PointsOfInterest.geojson",
+    format: new ol.format.GeoJSON(),
+  }),
+  visible: true,
+  title: "Lieux clés",
+  style: function (Feature) {
+    stylepoi.getText().setText(Feature.get("name"));
+    return stylepoi;
+  },
+});
+
 // vector layers Group 2
 const vectorLayers = new ol.layer.Group({
   title: "Couches spatiales",
   fold: "open",
-  layers: [zonesinondables, Bati],
+  layers: [zonesinondables, Bati, poi],
 });
 map.addLayer(vectorLayers);
 
