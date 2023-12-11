@@ -465,5 +465,5 @@ legend.addItem({
 });
 
 //put var legend values into the html div
-document.getElementById("legendmap").innerHTML = legend;
+//document.getElementById("legendmap").innerHTML = legend;
 //}
