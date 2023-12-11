@@ -31,7 +31,7 @@ const osmStandard = new ol.layer.Tile({
 // 2) OSM Humanitarian basemap
 const osmHumanitarian = new ol.layer.Tile({
   source: new ol.source.XYZ({
-    url: "https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png",
+    url: "https://a.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png",
   }),
   type: "base",
   visible: true,
