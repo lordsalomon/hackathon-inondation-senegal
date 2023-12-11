@@ -1,0 +1,30 @@
+{
+"type": "FeatureCollection",
+"name": "PointsOfInterest",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "osm_id": "1812554553", "code": 2952, "fclass": "water_tower", "name": null }, "geometry": { "type": "Point", "coordinates": [ -16.2304759, 14.6468978 ] } },
+{ "type": "Feature", "properties": { "osm_id": "1812555726", "code": 2951, "fclass": "comms_tower", "name": null }, "geometry": { "type": "Point", "coordinates": [ -16.2338171, 14.6569475 ] } },
+{ "type": "Feature", "properties": { "osm_id": "2818621038", "code": 2404, "fclass": "guesthouse", "name": null }, "geometry": { "type": "Point", "coordinates": [ -16.2377779, 14.6564831 ] } },
+{ "type": "Feature", "properties": { "osm_id": "3642725720", "code": 2724, "fclass": "memorial", "name": null }, "geometry": { "type": "Point", "coordinates": [ -16.2107587, 14.6330415 ] } },
+{ "type": "Feature", "properties": { "osm_id": "4218847715", "code": 2084, "fclass": "college", "name": "Centre National de Formation des Techniciens en Maintenance Hospitalière" }, "geometry": { "type": "Point", "coordinates": [ -16.2323283, 14.6440181 ] } },
+{ "type": "Feature", "properties": { "osm_id": "4228039581", "code": 2301, "fclass": "restaurant", "name": "Pizza Gora" }, "geometry": { "type": "Point", "coordinates": [ -16.2345001, 14.6557052 ] } },
+{ "type": "Feature", "properties": { "osm_id": "4228121438", "code": 2305, "fclass": "bar", "name": "Bar Kouniame" }, "geometry": { "type": "Point", "coordinates": [ -16.2348103, 14.6574347 ] } },
+{ "type": "Feature", "properties": { "osm_id": "4228121439", "code": 2005, "fclass": "post_office", "name": "Poste de Diourbel" }, "geometry": { "type": "Point", "coordinates": [ -16.233518, 14.6544267 ] } },
+{ "type": "Feature", "properties": { "osm_id": "4228135089", "code": 2010, "fclass": "prison", "name": "Centre de Détention de Diourbel" }, "geometry": { "type": "Point", "coordinates": [ -16.232648, 14.6533287 ] } },
+{ "type": "Feature", "properties": { "osm_id": "4318466951", "code": 2084, "fclass": "college", "name": "Institut Africain de Santé Sociale Mame Diarra Bousso" }, "geometry": { "type": "Point", "coordinates": [ -16.2408398, 14.6580977 ] } },
+{ "type": "Feature", "properties": { "osm_id": "5180058159", "code": 2001, "fclass": "police", "name": "Gendarmerie Diourbel" }, "geometry": { "type": "Point", "coordinates": [ -16.2525011, 14.6513142 ] } },
+{ "type": "Feature", "properties": { "osm_id": "6231155028", "code": 2952, "fclass": "water_tower", "name": null }, "geometry": { "type": "Point", "coordinates": [ -16.2299985, 14.6472257 ] } },
+{ "type": "Feature", "properties": { "osm_id": "6926467085", "code": 2401, "fclass": "hotel", "name": "Auberge" }, "geometry": { "type": "Point", "coordinates": [ -16.2537143, 14.6475797 ] } },
+{ "type": "Feature", "properties": { "osm_id": "6927220485", "code": 2401, "fclass": "hotel", "name": "Hotel Balkan" }, "geometry": { "type": "Point", "coordinates": [ -16.2173441, 14.639575 ] } },
+{ "type": "Feature", "properties": { "osm_id": "6927918686", "code": 2305, "fclass": "bar", "name": "Bar Aguene et Diambone" }, "geometry": { "type": "Point", "coordinates": [ -16.2313822, 14.654045 ] } },
+{ "type": "Feature", "properties": { "osm_id": "7066549661", "code": 2503, "fclass": "kiosk", "name": null }, "geometry": { "type": "Point", "coordinates": [ -16.2335054, 14.6561393 ] } },
+{ "type": "Feature", "properties": { "osm_id": "7067422000", "code": 2503, "fclass": "kiosk", "name": null }, "geometry": { "type": "Point", "coordinates": [ -16.2339845, 14.6561404 ] } },
+{ "type": "Feature", "properties": { "osm_id": "7067534715", "code": 2016, "fclass": "market_place", "name": "Marché de Diourbel" }, "geometry": { "type": "Point", "coordinates": [ -16.2176726, 14.6483573 ] } },
+{ "type": "Feature", "properties": { "osm_id": "7082259848", "code": 2543, "fclass": "doityourself", "name": null }, "geometry": { "type": "Point", "coordinates": [ -16.2388992, 14.6367903 ] } },
+{ "type": "Feature", "properties": { "osm_id": "7185249489", "code": 2301, "fclass": "restaurant", "name": "Matt Gui" }, "geometry": { "type": "Point", "coordinates": [ -16.2335495, 14.650459 ] } },
+{ "type": "Feature", "properties": { "osm_id": "7185256488", "code": 2401, "fclass": "hotel", "name": "Confiance auberge" }, "geometry": { "type": "Point", "coordinates": [ -16.2334046, 14.6405463 ] } },
+{ "type": "Feature", "properties": { "osm_id": "7286001089", "code": 2401, "fclass": "hotel", "name": "Auberge Confiance" }, "geometry": { "type": "Point", "coordinates": [ -16.2334175, 14.6405317 ] } },
+{ "type": "Feature", "properties": { "osm_id": null, "code": null, "fclass": "Mairie", "name": "Mairie Diourbel" }, "geometry": { "type": "Point", "coordinates": [ -16.233674573955948, 14.656718718000798 ] } }
+]
+}
