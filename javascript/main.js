@@ -216,7 +216,7 @@ var stylepoi = new ol.style.Style({
     width: 2,
   }),
   text: new ol.style.Text({
-    font: "10px Calibri,sans-serif",
+    font: "8px Calibri,sans-serif",
     textAlign: "center",
     backgroundFill: new ol.style.Fill({ color: "white" }),
     fill: new ol.style.Fill({
