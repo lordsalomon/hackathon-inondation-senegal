@@ -161,10 +161,10 @@ getStyle = function (feature, resolution) {
     //
     return new ol.style.Style({
       fill: new ol.style.Fill({
-        color: "rgb(254,240,217)", //  yellow
+        color: "rgb(239,243,255)", //  yellow
       }),
       stroke: new ol.style.Stroke({
-        color: "rgb(254,240,217)",
+        color: "rgb(239,243,255)",
         width: 1,
       }),
     });
@@ -172,10 +172,10 @@ getStyle = function (feature, resolution) {
     //
     return new ol.style.Style({
       fill: new ol.style.Fill({
-        color: "rgb(252,141,89)", //  orange
+        color: "rgb(107,174,214)", //  orange
       }),
       stroke: new ol.style.Stroke({
-        color: "rgb(252,141,89)",
+        color: "rgb(107,174,214)",
         width: 1,
       }),
     });
@@ -183,10 +183,10 @@ getStyle = function (feature, resolution) {
     //
     return new ol.style.Style({
       fill: new ol.style.Fill({
-        color: "rgb(215,48,31)", //  red
+        color: "rgb(8,81,156)", //  red
       }),
       stroke: new ol.style.Stroke({
-        color: "rgb(215,48,31)",
+        color: "rgb(8,81,156)",
         width: 1,
       }),
     });
